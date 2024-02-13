@@ -32,8 +32,7 @@
     "docker:up": "docker compose --env-file .env.production up -d --no-build",
     "docker:down": "docker compose --env-file .env.production down",
     "docker:logs": "docker compose --env-file .env.production logs -f",
-    "prebuild": "rimraf dist",
-    "prepare": "husky install"
+    "prebuild": "rimraf dist"
   },
   "dependencies": {
     "@fastify/static": "^6.5.1",
@@ -91,7 +90,6 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "husky": "^8.0.2",
     "jest": "^29.3.1",
     "lint-staged": "^13.0.4",
     "prettier": "^2.8.0",
