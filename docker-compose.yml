@@ -37,7 +37,7 @@ services:
     ports:
       - '${REDIS_PORT}:6379'
     command: >
-      --requirepass ${REDIS_PASSWORD}
+      --requirepass 123456
     networks:
       - nest_admin_net
 
